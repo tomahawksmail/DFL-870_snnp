@@ -1,7 +1,7 @@
 # DFL-870_snnp log
 you must create db 'snmp', create 3 tables:
 
-CREATE TABLE `Alarm_Security_Events` (
+> CREATE TABLE `Alarm_Security_Events` (
 	`EventID` INT(15) NOT NULL AUTO_INCREMENT,
 	`device` VARCHAR(30) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`dt` DATE NULL DEFAULT NULL,
@@ -21,7 +21,7 @@ ENGINE=InnoDB
 AUTO_INCREMENT=1
 ;
 
-CREATE TABLE `L2TP_PPTP_Events` (
+> CREATE TABLE `L2TP_PPTP_Events` (
 	`EventID` INT(15) NOT NULL AUTO_INCREMENT,
 	`device` VARCHAR(30) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`dt` DATE NULL DEFAULT NULL,
@@ -41,7 +41,7 @@ ENGINE=InnoDB
 AUTO_INCREMENT=1
 ;
 
-CREATE TABLE `Other_Events` (
+> CREATE TABLE `Other_Events` (
 	`EventID` INT(11) NOT NULL AUTO_INCREMENT,
 	`device` VARCHAR(30) NULL DEFAULT NULL COLLATE 'utf8mb4_general_ci',
 	`dt` DATE NULL DEFAULT NULL,
